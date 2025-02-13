@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap');
+
+/* Variaveis */
+
+:root{
+    --primary-color: #003366;
+    --secondary-color: #0A0A0A;
+    --tertiary-color: #FFFFFF;
+    --quaternary-color: #2E2E2E;
+    --quinquenary-color: #4F4F4F;
+}
+
+/* Animations */
+
+@keyframes fadeIn{
+    from{
+        box-shadow: 0px 5px 0px 5px rgb(0, 51, 102, 1);
+    }
+    to{
+        box-shadow: 5px 0px 5px 0px rgb(0, 51, 102, 1);
+    }
+}
+
+
+/* TAGS  */
+
+*{
+    color: var(--tertiary-color);
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    border: 1px solid red;
+}
+
+body{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: var(--tertiary-color);
+}
+
+
+/* IDS */
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-right: 50px;
+}
+
+#container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+    background-color: var(--secondary-color);
+
+    div{
+        height: 350px;
+        width: 350px;
+        border-radius: 40%;
+        background-image: url(static/images/fot.jfif);
+        background-position: top;
+        background-size: cover;
+        animation: fadeIn infinite 2s ease alternate;
+        box-shadow: 0px 0px 10px 10px var(--primary-color);
+        transition: 1s ease all;
+    }
+
+    div:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.5);
+        animation: none !important;
+    }
+}
+
+#container2{
+    display: flex;
+    flex-direction: row;
+    justify-self: unset;
+    height: 700px;
+    width: 100%;
+    background-color: var(--quaternary-color);
+}
+
+/* CLASSES */
+
+
+
+/* Medias */
