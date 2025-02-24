@@ -1,42 +1,34 @@
-// Aguardar o carregamento completo da janela
-window.addEventListener('load', () => {
-    const iframe = document.getElementById('frame');
+function textsAtualization() {
+    let titles = [
+        "WEB",
+        "FullStack",
+        "Python",
+        "Back-end",
+        "Front-end"
+    ];
 
-    // Aguardar o carregamento do conteúdo do iframe
-    iframe.addEventListener('load', () => {
-        try {
-            // Acessar o documento interno do iframe
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-            const response_promp = iframeDoc.getElementById("reponse_promp");
+    const tiping = document.querySelector("#trocador span");
+    let textIndex = 0;
 
-            if (response_promp) {
-                console.log('Input encontrado no iframe!');
-                response_promp.addEventListener('keydown', function (e) {
-                    if (e.key === 'Enter') {
-                        e.preventDefault();
-                        console.log('Enter pressionado no iframe!');
-                        teste(response_promp.value);
-                    }
-                });
-            } else {
-                console.error('Elemento reponse_promp não encontrado no iframe.');
-            }
-        } catch (error) {
-            console.error('Erro ao acessar o conteúdo do iframe:', error);
-        }
-    });
-});
+    // Exibe o primeiro texto
+    tiping.textContent = titles[textIndex];
 
-// Função para manipular a exibição do iframe
-function teste(value) {
-    const frame = document.getElementById("frame");
-    console.log(`Valor recebido: ${value}`);
-
-    if (value.trim().toLowerCase() === "continue") {
-        frame.style.display = "none";
-        console.log('Iframe ocultado.');
-    } else {
-        frame.style.display = "flex";
-        console.log('Iframe visível.');
-    }
+    // Altera o texto a cada 5 segundos
+    setInterval(() => {
+        textIndex = (textIndex + 1) % titles.length;
+        tiping.textContent = titles[textIndex];
+    }, 5000);
 }
+
+window.addEventListener('scroll', () => {
+    const navBar = document.getElementById("nav-bar");
+
+    if (window.scrollY == 0){
+        navBar.classList.remove("change-navbar")
+    }else{
+        navBar.classList.add("change-navbar")
+    }
+})
+
+// Inicia a função
+textsAtualization()
