@@ -19,51 +19,47 @@ function teste(){
             loadding.classList.add("hidden");
             content2.classList.remove("hidden");
             document.getElementById("skills").classList.remove("hidden");
-        }, 5000);
+        }, 3000);
     }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     const skillsContainer = document.getElementById("skills-content");
     const icons = [
-        "static/icons/html-5.png",
-        "static/icons/css-3.png",
-        "static/icons/js.png",
-        "static/icons/python.png",
-        "static/icons/django.png",
-        "static/icons/mysql.png",
-        "static/icons/sql.png",
-        "static/icons/git.png",
-        "static/icons/react.webp",
-        "static/icons/nodejs.png"
+        "assets/img/icons/html-5.png",
+        "assets/img/icons/css-3.png",
+        "assets/img/icons/js.png",
+        "assets/img/icons/python.png",
+        "assets/img/icons/django.png",
+        "assets/img/icons/mysql.png",
+        "assets/img/icons/sql.png",
+        "assets/img/icons/git.png",
+        "assets/img/icons/react.webp",
+        "assets/img/icons/nodejs.png"
     ];
     
     let index = 0;
-    const displayCount = 7; // Quantos ícones mostrar por vez
-    const delay = 3000; // Tempo entre as trocas (3s)
+    const displayCount = 7;
+    const delay = 3000; 
 
     function updateIcons() {
-        // Faz fade-out antes de trocar
         skillsContainer.style.opacity = "0";
 
         setTimeout(() => {
-            skillsContainer.innerHTML = ""; // Remove os ícones atuais
+            skillsContainer.innerHTML = "";
             
-            // Exibe os próximos 7 ícones
             for (let i = 0; i < displayCount; i++) {
                 const img = document.createElement("img");
-                img.src = icons[(index + i) % icons.length]; // Garante que não estoure o array
+                img.src = icons[(index + i) % icons.length];
                 img.alt = "Skill";
                 img.classList.add("icon-skills");
                 skillsContainer.appendChild(img);
             }
 
-            // Atualiza o índice para o próximo grupo de ícones
             index = (index + displayCount) % icons.length;
 
-            // Faz fade-in depois da troca
             skillsContainer.style.opacity = "1";
-        }, 3500); // Tempo do fade-out antes da troca
+        }, 3500); 
     }
 
     setInterval(updateIcons, delay);

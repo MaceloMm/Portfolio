@@ -1,148 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="scripts.js" defer></script>
-    <link rel="shortcut icon" href="static/icons/favicon.ico" type="icon">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script src="assets/javascript/scripts.js" defer></script>
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" type="icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=details" />
 </head>
+
 <body>
+
     <header id="nav-bar">
         <div id="trocador" style="width: 500px;">
-            <h1>Desenvolvedor <span></span></h1> 
+            <h1>Desenvolvedor <span></span></h1>
         </div>
         <div id="menu">
-            <a href="#nav-bar"><p>Sobre min</p></a>
+            <a href="#nav-bar">
+                <p>Sobre min</p>
+            </a>
             <p>|</p>
-            <a href="#container2"><p>Projetos</p></a>
+            <a href="#container2">
+                <p>Projetos</p>
+            </a>
             <p>|</p>
             <p>Contato</p>
         </div>
     </header>
 
     <section id="container1">
-        <iframe src="promp.html" frameborder="0" width="90%" height="90%" style="border-radius: 0.5rem;" id="frame"></iframe>
+        <iframe src="promp.html" frameborder="0" width="90%" height="90%" style="border-radius: 0.5rem;"
+            id="frame"></iframe>
     </section>
 
-    <section id="container2"> 
-        <div class="title">
-            <h2>Projetos</h2>
-        </div>
-        <div class="content-itens">
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
+    <section id="container2">
+        <div class="options">
+            <div class="option active">
+                Projetos
+                <span></span>
             </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
+            <div class="option">
+                Certificações
+                <span></span>
             </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="images-project">
-                    <a href=""><img src="" alt=""></a>
-                </div>
-                <div class="desc-project">
-                    <p></p>
-                    <a href=""><img src="" alt=""></a>
-                </div>
+            <div class="option">
+                Diferenciais
+                <span></span>
             </div>
         </div>
+
+        <div class="content" id="projects">
+
+            <div class="project">
+                <div class="header-project">
+                    <img src="assets/img/images/painel.png" alt="Imagem do projeto">
+                    <p class="title">FocusBoard</p>
+                </div>
+                <div class="content-project">
+                    <div class="links">
+                        <a href="https://github.com/MaceloMm/kanban-django-project" class="link" id="github"
+                            target="_blank">
+                            <img src="assets/img/icons/github-icon.png" alt="" class="icon">
+                            <h2>Repositorio do Projeto</h2>
+                            <span></span>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7340051736297889793/" class="link"
+                            id="linkedin" target="_blank">
+                            <img src="assets/img/icons/linkedin-icon.png" alt="logo linkedin" class="icon">
+                            <h2>Post do Projeto</h2>
+                            <span></span>
+                        </a>
+                        <div class="link info">
+                            <img src="assets/img/icons/information.png" alt="" class="icon">
+                            <h2>Detalhes do Projeto</h2>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="tecnologias">
+                        <img src="assets/img/icons/django.png" alt="Django logo">
+                        <img src="assets/img/icons/js.png" alt="javascript logo">
+                        <img src="assets/img/icons/html-5.png" alt="HTML5 logo">
+                        <img src="assets/img/icons/python.png" alt="python logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="header-project">
+                    <img src="assets/img/images/painel.png" alt="Imagem do projeto">
+                    <p class="title">FocusBoard</p>
+                </div>
+                <div class="content-project">
+                    <div class="links">
+                        <a href="https://github.com/MaceloMm/kanban-django-project" class="link" id="github"
+                            target="_blank">
+                            <img src="assets/img/icons/github-icon.png" alt="" class="icon">
+                            <h2>Repositorio do Projeto</h2>
+                            <span></span>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7340051736297889793/" class="link"
+                            id="linkedin" target="_blank">
+                            <img src="assets/img/icons/linkedin-icon.png" alt="logo linkedin" class="icon">
+                            <h2>Post do Projeto</h2>
+                            <span></span>
+                        </a>
+                        <div class="link info">
+                            <img src="assets/img/icons/information.png" alt="" class="icon">
+                            <h2>Detalhes do Projeto</h2>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="tecnologias">
+                        <img src="assets/img/icons/django.png" alt="Django logo">
+                        <img src="assets/img/icons/js.png" alt="javascript logo">
+                        <img src="assets/img/icons/html-5.png" alt="HTML5 logo">
+                        <img src="assets/img/icons/python.png" alt="python logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="header-project">
+                    <img src="assets/img/images/painel.png" alt="Imagem do projeto">
+                    <p class="title">TaskBoard</p>
+                </div>
+                <div class="content-project">
+                    <div class="links">
+                        <a href="https://github.com/MaceloMm/kanban-django-project" class="link" id="github"
+                            target="_blank">
+                            <img src="assets/img/icons/github-icon.png" alt="" class="icon">
+                            <h2>Repositorio do Projeto</h2>
+                            <span></span>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7340051736297889793/" class="link"
+                            id="linkedin" target="_blank">
+                            <img src="assets/img/icons/linkedin-icon.png" alt="logo linkedin" class="icon">
+                            <h2>Post do Projeto</h2>
+                            <span></span>
+                        </a>
+                        <div class="link info">
+                            <img src="assets/img/icons/information.png" alt="" class="icon">
+                            <h2>Detalhes do Projeto</h2>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="tecnologias">
+                        <img src="assets/img/icons/django.png" alt="Django logo">
+                        <img src="assets/img/icons/js.png" alt="javascript logo">
+                        <img src="assets/img/icons/html-5.png" alt="HTML5 logo">
+                        <img src="assets/img/icons/python.png" alt="python logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="header-project">
+                    <img src="assets/img/images/painel.png" alt="Imagem do projeto">
+                    <p class="title">TaskBoard</p>
+                </div>
+                <div class="content-project">
+                    <div class="links">
+                        <a href="https://github.com/MaceloMm/kanban-django-project" class="link" id="github"
+                            target="_blank">
+                            <img src="assets/img/icons/github-icon.png" alt="" class="icon">
+                            <h2>Repositorio do Projeto</h2>
+                            <span></span>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7340051736297889793/" class="link"
+                            id="linkedin" target="_blank">
+                            <img src="assets/img/icons/linkedin-icon.png" alt="logo linkedin" class="icon">
+                            <h2>Post do Projeto</h2>
+                            <span></span>
+                        </a>
+                        <div class="link info">
+                            <img src="assets/img/icons/information.png" alt="" class="icon">
+                            <h2>Detalhes do Projeto</h2>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="tecnologias">
+                        <img src="assets/img/icons/django.png" alt="Django logo">
+                        <img src="assets/img/icons/js.png" alt="javascript logo">
+                        <img src="assets/img/icons/html-5.png" alt="HTML5 logo">
+                        <img src="assets/img/icons/python.png" alt="python logo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content hide " id="certifications">
+            <div class="certification">
+                <img src="" alt="">
+                <main></main>
+            </div>
+            <div class="certification">
+
+            </div>
+            <div class="certification">
+
+            </div>
+            <div class="certification">
+
+            </div>
+            <div class="certification">
+
+            </div>
+            <div class="certification">
+
+            </div>
+            <div class="certification">
+
+            </div>
+            <div class="certification">
+
+            </div>
+        </div>
+
+        <div class="content hide" id="differentials">
+
+        </div>
+
+
     </section>
+
 
     <section id="container3">
-
-    </section>
-
-    <section id="container4">
-
-    </section>
-
-    <section id="conteiner5">
-
     </section>
 
     <footer>
         <div id="container-icons">
-            <a href="https://www.linkedin.com/in/macelomm/" target="_blank"><div class="icon" id="lin"> </div></a>
-            <a href="https://github.com/MaceloMm" target="_blank"><div class="icon" id="git"> </div></a>
-            <a href="https://www.instagram.com/macelo.mm/" target="_blank"><div class="icon" id="insta"> </div></a>
+            <a href="https://www.linkedin.com/in/macelomm/" target="_blank">
+                <div class="icon" id="lin"> </div>
+            </a>
+            <a href="https://github.com/MaceloMm" target="_blank">
+                <div class="icon" id="git"> </div>
+            </a>
+            <a href="https://www.instagram.com/macelo.mm/" target="_blank">
+                <div class="icon" id="insta"> </div>
+            </a>
         </div>
         <div style="font-size: 10px; margin-bottom: 3px;">© Todos os direitos reservados - Macelo Augusto.</div>
     </footer>
+
+    <div class="modal hide" id="modal">
+        <div class="modal-content">
+            <span class="close close-btn" id="close">&times;</span>
+            <div class="header-modal">
+                <div class="project-demostration">
+                    <video src="" id="video-project" controls autoplay muted loop>
+                        <source src="" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <div id="project-title">
+                    </div>
+                </div>
+                <div class="modal-options">
+                    <a class="option link">
+                        <img src="assets/img/icons/github-icon.png" alt="" class="icon">
+                        <h2>Repositorio do Projeto</h2>
+                        <span></span>
+                    </a>
+                    <a class="option link">
+                        <img src="assets/img/icons/linkedin-icon.png" alt="logo linkedin" class="icon">
+                        <h2>Post do Projeto</h2>
+                        <span></span>
+                    </a>
+                    <div class="link close-btn">
+                        <img src="assets/img/icons/close.png" alt="Imagem de fechamento" class="icon">
+                        <h2>Fechar</h2>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-modal">
+                <div class="description">
+                    <h2>Descrição do projeto:</h2>
+                    <p id="description-camp">
+                    </p>
+                    <h3 class="functions">
+                        💡 Funcionalidades principais:
+                    </h3>
+                    <ol class="functions-camp" style="list-style: disc;">
+                    </ol>
+
+                    <h3 class="tecnologias">🛠️ Tecnologias Utilizadas</h3>
+                    <ol class="tecnologies-camp" style="list-style: disc;">
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
