@@ -38,6 +38,6 @@ Miniaplicação em Python consumindo uma API pública (ex.: IBGE ou OpenWeather)
 👉 [Meu portfólio online](https://SEU-LINK-AQUI) *(adicione link do GitHub Pages, Netlify ou Vercel após publicar)*
 
 ## 📬 Contato
-- Email: seuemail@gmail.com  
+- Email: maceloaugusto066@gmail.com  
 - LinkedIn: [linkedin.com/in/macelomm](https://www.linkedin.com/in/macelomm)  
 - GitHub: [github.com/MaceloMm](https://github.com/MaceloMm)
