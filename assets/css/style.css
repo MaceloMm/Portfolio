@@ -577,14 +577,15 @@ footer {
         .certification{
             margin: auto;
             background-color: red;
-            width: 43rem;
-            height: 27rem;
+            width: 40rem;
+            height: 30rem;
             border-radius: 1rem;
 
             img{
-                height: 85%;
+                height: 75%;
                 width: 100%;
                 border-radius: 1rem;
+                object-fit: cover;
             }
 
             main{

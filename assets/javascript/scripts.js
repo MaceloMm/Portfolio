@@ -13,7 +13,28 @@ dataProjects = [
             "github": "https://github.com/MaceloMm/kanban-django-project"
         }
     },
-]
+];
+
+dataCertifications = [
+    {
+        "title": 'Python do Básico ao Avançado',
+        "image": 'assets/img/certifications/cursoPython.jpeg',
+        "institution": 'Geek University',
+        "date": '2025-02-15'
+    },
+    {
+        "title": 'Analise e densvolvimento de sistemas',
+        "image": 'assets/img/certifications/diplomaAds.png',
+        "institution": 'UNIP - Universidade Paulista',
+        "date": '2022-01-24'
+    },
+    {
+        "title": 'Desenvolvimento WEB fullstack',
+        "image": 'assets/img/certifications/diplomaWeb.png',
+        "institution": 'Anhanguera',
+        "date": '2022-11-28'
+    },
+];
 
 function textsAtualization() {
     let titles = [
@@ -33,6 +54,23 @@ function textsAtualization() {
         textIndex = (textIndex + 1) % titles.length;
         tiping.textContent = titles[textIndex];
     }, 5000);
+}
+
+function createCertification(certification) {
+    const certificationContainer = document.getElementById("certifications");
+    const certificationElement = document.createElement("div");
+    certificationElement.classList.add("certification");
+
+    certificationElement.innerHTML = `
+        <img src="${certification.image}" alt="${certification.title}">
+        <div class="certification-info">
+            <h3>${certification.title}</h3>
+            <p>${certification.institution}</p>
+            <p>${new Date(certification.date).toLocaleDateString()}</p>
+        </div>
+    `;
+
+    certificationContainer.appendChild(certificationElement);
 }
 
 window.addEventListener('scroll', () => {
@@ -77,7 +115,7 @@ document.querySelectorAll(".info").forEach((item) => {
                 modal.querySelector("#video-project source").src = projectData.video;
                 modal.querySelector("#project-title").textContent = projectData.title;
                 modal.querySelector("#description-camp").textContent = projectData.description;
-                
+
                 projectData.funcionalidades.forEach((func) => {
                     const li = document.createElement("li");
                     li.textContent = func;
@@ -106,6 +144,11 @@ document.querySelectorAll(".close-btn").forEach((el) => {
         modal.querySelector(".functions-camp").innerHTML = '';
         modal.querySelector(".tecnologies-camp").innerHTML = '';
     });
+});
+
+
+dataCertifications.forEach((certification) => {
+    createCertification(certification);
 });
 
 textsAtualization()
